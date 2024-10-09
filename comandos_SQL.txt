@@ -1,0 +1,5 @@
+select * from logline;
+select log_time, log_level, col_1 as log_message from logline;
+select log_time, log_level, col_1 as log_message from logline where log_level in ('error', 'critical');
+select log_time, log_level, col_1 as log_message from logline where log_message like '%ingesta01%';
+select log_time, log_level, col_1 as log_message from logline where log_message like '%Server%';
